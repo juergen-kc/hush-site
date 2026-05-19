@@ -1,12 +1,14 @@
 /* hush-site — token-faithful PAPER/TERM auto-switching. */
 
 :root {
-    /* PAPER theme (light) — mirrors Hush/Theme/PaperTheme.swift */
+    /* PAPER theme (light) — mirrors Hush/Theme/PaperTheme.swift.
+       Contrast values verified for visionOS 4.5:1 minimum on 2026-05-19;
+       see Hush repo docs/theme/contrast-audit-2026-05.md. */
     --background: #F4EFE3;
     --surface: #ECE5D2;
     --text: #1A1A1A;
     --text-muted: #5A5550;
-    --text-dim: #888178;
+    --text-dim: #6B655E;
     --accent: #8B4513;
     --accent-soft: #C8956F;
     --border: rgba(26, 26, 26, 0.08);
@@ -14,12 +16,12 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* TERM theme (dark) — mirrors Hush/Theme/TermTheme.swift */
+        /* TERM theme (dark) — mirrors Hush/Theme/TermTheme.swift. */
         --background: #0F0F0F;
         --surface: #1A1A1A;
         --text: #F2A623;
-        --text-muted: #8C5F14;
-        --text-dim: #6B4710;
+        --text-muted: #B07719;
+        --text-dim: #A56E18;
         --accent: #F2A623;
         --accent-soft: #3E2C0E;
         --border: rgba(242, 166, 35, 0.15);
