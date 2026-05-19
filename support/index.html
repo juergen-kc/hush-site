@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Hush</title>
+    <meta name="description" content="Help, troubleshooting, and contact for Hush, a local-AI chat app for Apple Vision Pro.">
+    <link rel="icon" type="image/svg+xml" href="/hush-site/assets/favicon.svg">
+    <link rel="stylesheet" href="/hush-site/assets/styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <a class="brand" href="/hush-site/">hush<span class="cursor" aria-hidden="true"></span></a>
+        </header>
+
+        <h1>Support</h1>
+        <p class="subtitle">Help, troubleshooting, and contact for Hush.</p>
+
+        <h2>Contact</h2>
+        <p>For any question, bug report, or feature request, email <a href="mailto:juergen@klaassen.consulting">juergen@klaassen.consulting</a>. Responses usually within 1&ndash;2 business days.</p>
+
+        <h2>Troubleshooting</h2>
+
+        <h3>The first-launch download is slow or appears stuck</h3>
+        <p>Hush downloads the AI model (about 2.5&nbsp;GB) once on first launch. The download typically takes 5&ndash;10 minutes on a typical home connection but can take longer on slower networks. The progress bar shows actual progress &mdash; if it&rsquo;s moving, the download is working. If it stops moving for several minutes, close the app and reopen it; the download resumes from where it left off.</p>
+
+        <h3>Hush won&rsquo;t start after the download finishes</h3>
+        <p>After the download completes, Hush spends about 60 seconds compiling the model for your specific Vision Pro hardware. This only happens on the very first launch &mdash; subsequent launches take a couple seconds. If the &ldquo;Preparing model&rdquo; screen sits at 95% for more than two minutes, close and reopen the app.</p>
+
+        <h3>Voice input isn&rsquo;t working</h3>
+        <p>Hush needs microphone permission and speech-recognition permission. The first time you tap the mic button, Vision Pro asks for both. If you declined either, you can re-enable them in Settings &rarr; Apps &rarr; Hush.</p>
+
+        <h3>The model occasionally pauses mid-response</h3>
+        <p>Apple Vision Pro automatically throttles intensive workloads if it gets warm. Hush detects this and pauses generation when the device reports a thermal warning, then resumes when the device cools. This is normal behavior; no action is needed.</p>
+
+        <h3>Conversations aren&rsquo;t saving</h3>
+        <p>Hush stores conversations locally on your Vision Pro. There is no cloud sync. If you reset your Vision Pro or delete and reinstall Hush, the conversation history is lost. There is no recovery mechanism; this is by design (see the <a href="/hush-site/privacy/">privacy policy</a>).</p>
+
+        <h3>I want to delete my conversation history</h3>
+        <p>Open the app, tap the gear icon, scroll to &ldquo;Reset conversation,&rdquo; and tap. All stored turns are deleted immediately and permanently.</p>
+
+        <h2>FAQ</h2>
+
+        <h3>Does Hush use the cloud?</h3>
+        <p>No. After the one-time model download, Hush makes no network requests for the rest of its lifetime. The AI runs entirely on your Vision Pro. See the full <a href="/hush-site/privacy/">privacy policy</a> for details.</p>
+
+        <h3>Why is the first download so large?</h3>
+        <p>The model that produces Hush&rsquo;s responses is about 2.5&nbsp;GB on disk. Running a capable AI locally requires shipping its weights to the device once. After that, no further data needs to be downloaded.</p>
+
+        <h3>Do you collect any data?</h3>
+        <p>No. No analytics, no telemetry, no crash reporting, no accounts. The <a href="/hush-site/privacy/">privacy policy</a> is the canonical answer; the short version is &ldquo;nothing.&rdquo;</p>
+
+        <h3>Can I use Hush on iPhone or iPad?</h3>
+        <p>Not currently. Hush is built for Apple Vision Pro running visionOS&nbsp;26 or later.</p>
+
+        <h3>Is Hush a subscription?</h3>
+        <p>No. Hush is a one-time purchase. Updates are included.</p>
+
+        <h2>System requirements</h2>
+        <ul class="bare">
+            <li>Apple Vision Pro running visionOS&nbsp;26 or later.</li>
+            <li>About 3&nbsp;GB of free storage for the model.</li>
+            <li>An internet connection for the first-launch model download (about 2.5&nbsp;GB). No connection needed thereafter.</li>
+        </ul>
+
+        <h2>Report a bug or request a feature</h2>
+        <p>If you&rsquo;d like a faster, public-facing channel, you can also file an issue on <a href="https://github.com/juergen-kc/Hush/issues">GitHub</a>. Note that GitHub requires an account; email works without one.</p>
+
+        <footer>
+            <a href="/hush-site/">Home</a>
+            <a href="/hush-site/privacy/">Privacy</a>
+            <a href="mailto:juergen@klaassen.consulting">Contact</a>
+        </footer>
+    </main>
+</body>
+</html>
