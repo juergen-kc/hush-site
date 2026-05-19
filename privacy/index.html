@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Hush</title>
+    <meta name="description" content="Hush collects nothing. The model runs on your Apple Vision Pro and conversations never leave the device.">
+    <link rel="icon" type="image/svg+xml" href="/hush-site/assets/favicon.svg">
+    <link rel="stylesheet" href="/hush-site/assets/styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <a class="brand" href="/hush-site/">hush<span class="cursor" aria-hidden="true"></span></a>
+        </header>
+
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Hush collects nothing. This page exists to say that in detail.</p>
+
+        <dl class="meta">
+            <dt>Effective date</dt><dd>2026-05-18</dd>
+            <dt>App</dt><dd>Hush for visionOS</dd>
+            <dt>Developer</dt><dd>Juergen Klaassen / Klaassen Consulting</dd>
+        </dl>
+
+        <h2>What Hush collects</h2>
+        <p>Nothing.</p>
+        <p>Hush does not have a server. There is no account to create, no login, and no telemetry. Every conversation you have with the model happens on your Apple Vision Pro and never leaves your device.</p>
+        <p>The only data Hush stores locally on your device is:</p>
+        <ul class="bare">
+            <li>Your conversation history (turns of user input + model responses), persisted via Apple&rsquo;s SwiftData framework. Stored exclusively in the app&rsquo;s container; never transmitted anywhere.</li>
+            <li>Your settings (chosen theme, voice output toggle, thinking-mode toggle), persisted via Apple&rsquo;s <code>UserDefaults</code>. Never transmitted anywhere.</li>
+        </ul>
+        <p>Tapping &ldquo;Reset conversation&rdquo; in the app&rsquo;s Settings sheet deletes all stored conversation history immediately and permanently.</p>
+
+        <h2>What Hush transmits</h2>
+        <p>Exactly one network request, and only on first launch:</p>
+        <ul class="bare">
+            <li>A model-weights download from Hugging Face (<code>huggingface.co</code>) for the on-device LLM. This is a one-time download of approximately 2.5&nbsp;GB. After this download completes, Hush makes no further network requests for the lifetime of the app.</li>
+        </ul>
+        <p>Hugging Face&rsquo;s privacy policy governs that single download: <a href="https://huggingface.co/privacy">huggingface.co/privacy</a>.</p>
+
+        <h2>What Hush does not do</h2>
+        <ul class="bare">
+            <li>No analytics. No tracking. No advertising identifiers.</li>
+            <li>No third-party SDKs that collect data.</li>
+            <li>No remote logging or crash reporting.</li>
+            <li>No background activity.</li>
+            <li>No cloud sync of conversations or settings.</li>
+        </ul>
+
+        <h2>Voice input and voice output</h2>
+        <p>When you use the optional voice input feature, your speech is processed by Apple&rsquo;s on-device speech recognition. The audio and resulting transcript never leave your device. When you use the optional voice output feature, Apple&rsquo;s on-device text-to-speech synthesizes the audio locally.</p>
+
+        <h2>Children&rsquo;s privacy</h2>
+        <p>Hush has no age-gated features and does not knowingly target users under 13. The app collects no personal information from anyone, including children.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this policy: <a href="mailto:juergen@klaassen.consulting">juergen@klaassen.consulting</a>.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If material changes are made to this policy, they will be published at this URL with an updated effective date. Hush does not have a mechanism to notify existing installs of policy changes.</p>
+
+        <footer>
+            <a href="/hush-site/">Home</a>
+            <a href="https://github.com/juergen-kc/Hush/issues">Support</a>
+            <a href="mailto:juergen@klaassen.consulting">Contact</a>
+        </footer>
+    </main>
+</body>
+</html>

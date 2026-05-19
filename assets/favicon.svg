@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+    <style>
+        rect.bg { fill: #F4EFE3; }
+        text.h { fill: #1A1A1A; }
+        rect.cursor { fill: #8B4513; }
+        @media (prefers-color-scheme: dark) {
+            rect.bg { fill: #0F0F0F; }
+            text.h { fill: #F2A623; }
+            rect.cursor { fill: #F2A623; }
+        }
+    </style>
+    <rect class="bg" width="64" height="64" rx="12"/>
+    <text class="h" x="11" y="48" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="44" font-weight="600">h</text>
+    <rect class="cursor" x="40" y="20" width="8" height="28"/>
+</svg>
