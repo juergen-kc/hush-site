@@ -26,6 +26,10 @@
         <h2>What Hush collects</h2>
         <p>Nothing.</p>
         <p>Hush does not have a server. There is no account to create, no login, and no telemetry. Every conversation you have with the model happens on your Apple Vision Pro and never leaves your device.</p>
+
+        <h2>No third-party AI services</h2>
+        <p><strong>Hush does not use any third-party AI service.</strong> All AI processing &mdash; reading your prompt, generating the response, every token in between &mdash; runs entirely on your Apple Vision Pro using Apple&rsquo;s MLX framework. There is no remote inference, no cloud API call, and no external server involved in producing responses.</p>
+        <p>The AI model itself is software that runs locally on your device, the same way a word processor or a calculator runs locally. Your conversations are processed by code executing on your hardware, not transmitted to anyone.</p>
         <p>The only data Hush stores locally on your device is:</p>
         <ul class="bare">
             <li>Your conversation history (turns of user input + model responses), persisted via Apple&rsquo;s SwiftData framework. Stored exclusively in the app&rsquo;s container; never transmitted anywhere.</li>
@@ -36,7 +40,7 @@
         <h2>What Hush transmits</h2>
         <p>Exactly one network request, and only on first launch:</p>
         <ul class="bare">
-            <li>A model-weights download from Hugging Face (<code>huggingface.co</code>) for the on-device LLM. This is a one-time download of approximately 3.7&nbsp;GB. After this download completes, Hush makes no further network requests for the lifetime of the app.</li>
+            <li>A <em>read-only download</em> of model weights from Hugging Face (<code>huggingface.co</code>). This is a one-time fetch of approximately 3.7&nbsp;GB. The request is one-directional inbound: Hush is downloading software (the AI program itself) from a software repository. Your prompts, conversations, or other personal data are <strong>not</strong> sent in this request &mdash; or at any other time. After this download completes, Hush makes zero network requests for the lifetime of the app.</li>
         </ul>
         <p>Hugging Face&rsquo;s privacy policy governs that single download: <a href="https://huggingface.co/privacy">huggingface.co/privacy</a>.</p>
 
