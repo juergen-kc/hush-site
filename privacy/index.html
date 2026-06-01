@@ -54,7 +54,13 @@
         </ul>
 
         <h2>Voice input and voice output</h2>
-        <p>When you use the optional voice input feature, your speech is processed by Apple&rsquo;s on-device speech recognition. The audio and resulting transcript never leave your device. When you use the optional voice output feature, Apple&rsquo;s on-device text-to-speech synthesizes the audio locally.</p>
+        <p>When you use the optional voice input feature, your speech is processed by an on-device speech recognizer. Hush uses one of two recognizers, both of which run entirely on your Apple Vision Pro:</p>
+        <ul class="bare">
+            <li><strong>WhisperKit</strong> (preferred when available) &mdash; an open-source on-device speech-recognition library from Argmax Inc. The Whisper Base model used by WhisperKit is bundled inside the Hush app itself. The model file is part of the IPA you downloaded from the App Store; there is no separate download, no model server, and no network call at any point during speech recognition.</li>
+            <li><strong>Apple&rsquo;s on-device speech recognition</strong> (fallback) &mdash; the system <code>SFSpeechRecognizer</code> running in its on-device mode, used as a fallback when WhisperKit isn&rsquo;t available.</li>
+        </ul>
+        <p>In both cases the audio and resulting transcript never leave your device.</p>
+        <p>When you use the optional voice output feature, Apple&rsquo;s on-device text-to-speech synthesizes the audio locally.</p>
 
         <h2>Children&rsquo;s privacy</h2>
         <p>Hush has no age-gated features and does not knowingly target users under 13. The app collects no personal information from anyone, including children.</p>
